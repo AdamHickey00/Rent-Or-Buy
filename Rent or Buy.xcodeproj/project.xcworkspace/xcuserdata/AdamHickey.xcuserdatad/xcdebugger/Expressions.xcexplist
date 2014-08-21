@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ROBHomeViewController tableView:cellForRowAtIndexPath:]:ROBHomeViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "rowKey">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ROBHomeViewController getOffsetForTableRow:]:ROBHomeViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "rowIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

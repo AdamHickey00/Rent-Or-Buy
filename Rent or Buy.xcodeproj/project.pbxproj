@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C016683B1895AD9400D6370A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C016683A1895AD9400D6370A /* Foundation.framework */; };
+		C016683D1895AD9400D6370A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C016683C1895AD9400D6370A /* CoreGraphics.framework */; };
+		C016683F1895AD9400D6370A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C016683E1895AD9400D6370A /* UIKit.framework */; };
+		C01668451895AD9400D6370A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C01668431895AD9400D6370A /* InfoPlist.strings */; };
+		C01668471895AD9400D6370A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C01668461895AD9400D6370A /* main.m */; };
+		C016684B1895AD9400D6370A /* ROBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C016684A1895AD9400D6370A /* ROBAppDelegate.m */; };
+		C016684E1895AD9400D6370A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C016684C1895AD9400D6370A /* Main.storyboard */; };
+		C01668531895AD9400D6370A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01668521895AD9400D6370A /* Images.xcassets */; };
+		C016685A1895AD9400D6370A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01668591895AD9400D6370A /* XCTest.framework */; };
+		C016685B1895AD9400D6370A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C016683A1895AD9400D6370A /* Foundation.framework */; };
+		C016685C1895AD9400D6370A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C016683E1895AD9400D6370A /* UIKit.framework */; };
+		C01668641895AD9400D6370A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C01668621895AD9400D6370A /* InfoPlist.strings */; };
+		C01668661895AD9400D6370A /* Rent_or_BuyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C01668651895AD9400D6370A /* Rent_or_BuyTests.m */; };
+		C05D97AF18CBAED700A1AD10 /* ROBCalculationSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C05D97AC18CBAED700A1AD10 /* ROBCalculationSet.m */; };
+		C05D97B018CBAED700A1AD10 /* ROBCalculationInput.m in Sources */ = {isa = PBXBuildFile; fileRef = C05D97AE18CBAED700A1AD10 /* ROBCalculationInput.m */; };
+		C05D97B718CBAEE200A1AD10 /* ROBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C05D97B218CBAEE200A1AD10 /* ROBHomeViewController.m */; };
+		C05D97B818CBAEE200A1AD10 /* ROBGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C05D97B318CBAEE200A1AD10 /* ROBGraphViewController.m */; };
+		C05D97B918CBAEE200A1AD10 /* ROBFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = C05D97B418CBAEE200A1AD10 /* ROBFormatter.m */; };
+		C05D97BE18CBB11B00A1AD10 /* ROBYearsRentingTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C05D97BD18CBB11B00A1AD10 /* ROBYearsRentingTableCell.m */; };
+		C05D97C118CBB2D400A1AD10 /* ROBYearsRentingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C05D97C018CBB2D400A1AD10 /* ROBYearsRentingViewController.m */; };
+		C05D97C418CBD01D00A1AD10 /* ROBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C05D97C318CBD01D00A1AD10 /* ROBDetailViewController.m */; };
+		D1FE4D6518E7782E001D089C /* ROBUITableViewTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FE4D6418E7782E001D089C /* ROBUITableViewTouch.m */; };
+		D1FF9C0718FB5CF0001BE6FD /* ROBCalculation.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FF9C0618FB5CF0001BE6FD /* ROBCalculation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C016685D1895AD9400D6370A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C016682F1895AD9400D6370A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C01668361895AD9400D6370A;
+			remoteInfo = "Rent or Buy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C01668371895AD9400D6370A /* Rent or Buy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rent or Buy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C016683A1895AD9400D6370A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C016683C1895AD9400D6370A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C016683E1895AD9400D6370A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C01668421895AD9400D6370A /* Rent or Buy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rent or Buy-Info.plist"; sourceTree = "<group>"; };
+		C01668441895AD9400D6370A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C01668461895AD9400D6370A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C01668481895AD9400D6370A /* Rent or Buy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rent or Buy-Prefix.pch"; sourceTree = "<group>"; };
+		C01668491895AD9400D6370A /* ROBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROBAppDelegate.h; sourceTree = "<group>"; };
+		C016684A1895AD9400D6370A /* ROBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROBAppDelegate.m; sourceTree = "<group>"; };
+		C016684D1895AD9400D6370A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C01668521895AD9400D6370A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C01668581895AD9400D6370A /* Rent or BuyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rent or BuyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01668591895AD9400D6370A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C01668611895AD9400D6370A /* Rent or BuyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rent or BuyTests-Info.plist"; sourceTree = "<group>"; };
+		C01668631895AD9400D6370A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C01668651895AD9400D6370A /* Rent_or_BuyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rent_or_BuyTests.m; sourceTree = "<group>"; };
+		C05D97AB18CBAED700A1AD10 /* ROBCalculationSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROBCalculationSet.h; path = Data/ROBCalculationSet.h; sourceTree = "<group>"; };
+		C05D97AC18CBAED700A1AD10 /* ROBCalculationSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROBCalculationSet.m; path = Data/ROBCalculationSet.m; sourceTree = "<group>"; };
+		C05D97AD18CBAED700A1AD10 /* ROBCalculationInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROBCalculationInput.h; path = Data/ROBCalculationInput.h; sourceTree = "<group>"; };
+		C05D97AE18CBAED700A1AD10 /* ROBCalculationInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROBCalculationInput.m; path = Data/ROBCalculationInput.m; sourceTree = "<group>"; };
+		C05D97B118CBAEE200A1AD10 /* ROBFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROBFormatter.h; path = "User Interface/ROBFormatter.h"; sourceTree = "<group>"; };
+		C05D97B218CBAEE200A1AD10 /* ROBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROBHomeViewController.m; path = "User Interface/ROBHomeViewController.m"; sourceTree = "<group>"; };
+		C05D97B318CBAEE200A1AD10 /* ROBGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROBGraphViewController.m; path = "User Interface/ROBGraphViewController.m"; sourceTree = "<group>"; };
+		C05D97B418CBAEE200A1AD10 /* ROBFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROBFormatter.m; path = "User Interface/ROBFormatter.m"; sourceTree = "<group>"; };
+		C05D97B518CBAEE200A1AD10 /* ROBGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROBGraphViewController.h; path = "User Interface/ROBGraphViewController.h"; sourceTree = "<group>"; };
+		C05D97B618CBAEE200A1AD10 /* ROBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROBHomeViewController.h; path = "User Interface/ROBHomeViewController.h"; sourceTree = "<group>"; };
+		C05D97BC18CBB11B00A1AD10 /* ROBYearsRentingTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROBYearsRentingTableCell.h; path = "User Interface/ROBYearsRentingTableCell.h"; sourceTree = "<group>"; };
+		C05D97BD18CBB11B00A1AD10 /* ROBYearsRentingTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROBYearsRentingTableCell.m; path = "User Interface/ROBYearsRentingTableCell.m"; sourceTree = "<group>"; };
+		C05D97BF18CBB2D400A1AD10 /* ROBYearsRentingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROBYearsRentingViewController.h; sourceTree = "<group>"; };
+		C05D97C018CBB2D400A1AD10 /* ROBYearsRentingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROBYearsRentingViewController.m; sourceTree = "<group>"; };
+		C05D97C218CBD01D00A1AD10 /* ROBDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ROBDetailViewController.h; path = "User Interface/ROBDetailViewController.h"; sourceTree = "<group>"; };
+		C05D97C318CBD01D00A1AD10 /* ROBDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ROBDetailViewController.m; path = "User Interface/ROBDetailViewController.m"; sourceTree = "<group>"; };
+		D1FE4D6318E7782E001D089C /* ROBUITableViewTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROBUITableViewTouch.h; sourceTree = "<group>"; };
+		D1FE4D6418E7782E001D089C /* ROBUITableViewTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROBUITableViewTouch.m; sourceTree = "<group>"; };
+		D1FF9C0518FB5CF0001BE6FD /* ROBCalculation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ROBCalculation.h; sourceTree = "<group>"; };
+		D1FF9C0618FB5CF0001BE6FD /* ROBCalculation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROBCalculation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C01668341895AD9400D6370A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C016683D1895AD9400D6370A /* CoreGraphics.framework in Frameworks */,
+				C016683F1895AD9400D6370A /* UIKit.framework in Frameworks */,
+				C016683B1895AD9400D6370A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01668551895AD9400D6370A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C016685A1895AD9400D6370A /* XCTest.framework in Frameworks */,
+				C016685C1895AD9400D6370A /* UIKit.framework in Frameworks */,
+				C016685B1895AD9400D6370A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C016682E1895AD9400D6370A = {
+			isa = PBXGroup;
+			children = (
+				C01668401895AD9400D6370A /* Rent or Buy */,
+				C016685F1895AD9400D6370A /* Rent or BuyTests */,
+				C01668391895AD9400D6370A /* Frameworks */,
+				C01668381895AD9400D6370A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C01668381895AD9400D6370A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C01668371895AD9400D6370A /* Rent or Buy.app */,
+				C01668581895AD9400D6370A /* Rent or BuyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C01668391895AD9400D6370A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C016683A1895AD9400D6370A /* Foundation.framework */,
+				C016683C1895AD9400D6370A /* CoreGraphics.framework */,
+				C016683E1895AD9400D6370A /* UIKit.framework */,
+				C01668591895AD9400D6370A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C01668401895AD9400D6370A /* Rent or Buy */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4638318C8231D00120A5F /* Data */,
+				C0F4638218C822A600120A5F /* User Interface */,
+				C01668491895AD9400D6370A /* ROBAppDelegate.h */,
+				C016684A1895AD9400D6370A /* ROBAppDelegate.m */,
+				C016684C1895AD9400D6370A /* Main.storyboard */,
+				C01668521895AD9400D6370A /* Images.xcassets */,
+				C01668411895AD9400D6370A /* Supporting Files */,
+			);
+			path = "Rent or Buy";
+			sourceTree = "<group>";
+		};
+		C01668411895AD9400D6370A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C01668421895AD9400D6370A /* Rent or Buy-Info.plist */,
+				C01668431895AD9400D6370A /* InfoPlist.strings */,
+				C01668461895AD9400D6370A /* main.m */,
+				C01668481895AD9400D6370A /* Rent or Buy-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C016685F1895AD9400D6370A /* Rent or BuyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C01668651895AD9400D6370A /* Rent_or_BuyTests.m */,
+				C01668601895AD9400D6370A /* Supporting Files */,
+			);
+			path = "Rent or BuyTests";
+			sourceTree = "<group>";
+		};
+		C01668601895AD9400D6370A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C01668611895AD9400D6370A /* Rent or BuyTests-Info.plist */,
+				C01668621895AD9400D6370A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C05D97BA18CBB0C400A1AD10 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C05D97B118CBAEE200A1AD10 /* ROBFormatter.h */,
+				C05D97B418CBAEE200A1AD10 /* ROBFormatter.m */,
+				C05D97BC18CBB11B00A1AD10 /* ROBYearsRentingTableCell.h */,
+				C05D97BD18CBB11B00A1AD10 /* ROBYearsRentingTableCell.m */,
+				D1FE4D6318E7782E001D089C /* ROBUITableViewTouch.h */,
+				D1FE4D6418E7782E001D089C /* ROBUITableViewTouch.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		C05D97BB18CBB0CE00A1AD10 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C05D97B618CBAEE200A1AD10 /* ROBHomeViewController.h */,
+				C05D97B218CBAEE200A1AD10 /* ROBHomeViewController.m */,
+				C05D97B518CBAEE200A1AD10 /* ROBGraphViewController.h */,
+				C05D97B318CBAEE200A1AD10 /* ROBGraphViewController.m */,
+				C05D97BF18CBB2D400A1AD10 /* ROBYearsRentingViewController.h */,
+				C05D97C018CBB2D400A1AD10 /* ROBYearsRentingViewController.m */,
+				C05D97C218CBD01D00A1AD10 /* ROBDetailViewController.h */,
+				C05D97C318CBD01D00A1AD10 /* ROBDetailViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C0F4638218C822A600120A5F /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				C05D97BA18CBB0C400A1AD10 /* Components */,
+				C05D97BB18CBB0CE00A1AD10 /* View Controllers */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		C0F4638318C8231D00120A5F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C05D97AB18CBAED700A1AD10 /* ROBCalculationSet.h */,
+				C05D97AC18CBAED700A1AD10 /* ROBCalculationSet.m */,
+				D1FF9C0518FB5CF0001BE6FD /* ROBCalculation.h */,
+				D1FF9C0618FB5CF0001BE6FD /* ROBCalculation.m */,
+				C05D97AD18CBAED700A1AD10 /* ROBCalculationInput.h */,
+				C05D97AE18CBAED700A1AD10 /* ROBCalculationInput.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C01668361895AD9400D6370A /* Rent or Buy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01668691895AD9400D6370A /* Build configuration list for PBXNativeTarget "Rent or Buy" */;
+			buildPhases = (
+				C01668331895AD9400D6370A /* Sources */,
+				C01668341895AD9400D6370A /* Frameworks */,
+				C01668351895AD9400D6370A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rent or Buy";
+			productName = "Rent or Buy";
+			productReference = C01668371895AD9400D6370A /* Rent or Buy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C01668571895AD9400D6370A /* Rent or BuyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C016686C1895AD9400D6370A /* Build configuration list for PBXNativeTarget "Rent or BuyTests" */;
+			buildPhases = (
+				C01668541895AD9400D6370A /* Sources */,
+				C01668551895AD9400D6370A /* Frameworks */,
+				C01668561895AD9400D6370A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C016685E1895AD9400D6370A /* PBXTargetDependency */,
+			);
+			name = "Rent or BuyTests";
+			productName = "Rent or BuyTests";
+			productReference = C01668581895AD9400D6370A /* Rent or BuyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C016682F1895AD9400D6370A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ROB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Adam Hickey";
+				TargetAttributes = {
+					C01668361895AD9400D6370A = {
+						DevelopmentTeam = Q6X47JQ769;
+					};
+					C01668571895AD9400D6370A = {
+						TestTargetID = C01668361895AD9400D6370A;
+					};
+				};
+			};
+			buildConfigurationList = C01668321895AD9400D6370A /* Build configuration list for PBXProject "Rent or Buy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C016682E1895AD9400D6370A;
+			productRefGroup = C01668381895AD9400D6370A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C01668361895AD9400D6370A /* Rent or Buy */,
+				C01668571895AD9400D6370A /* Rent or BuyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C01668351895AD9400D6370A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01668531895AD9400D6370A /* Images.xcassets in Resources */,
+				C01668451895AD9400D6370A /* InfoPlist.strings in Resources */,
+				C016684E1895AD9400D6370A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01668561895AD9400D6370A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01668641895AD9400D6370A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C01668331895AD9400D6370A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C05D97B918CBAEE200A1AD10 /* ROBFormatter.m in Sources */,
+				D1FF9C0718FB5CF0001BE6FD /* ROBCalculation.m in Sources */,
+				C05D97B718CBAEE200A1AD10 /* ROBHomeViewController.m in Sources */,
+				C016684B1895AD9400D6370A /* ROBAppDelegate.m in Sources */,
+				C05D97BE18CBB11B00A1AD10 /* ROBYearsRentingTableCell.m in Sources */,
+				C01668471895AD9400D6370A /* main.m in Sources */,
+				C05D97B018CBAED700A1AD10 /* ROBCalculationInput.m in Sources */,
+				D1FE4D6518E7782E001D089C /* ROBUITableViewTouch.m in Sources */,
+				C05D97C118CBB2D400A1AD10 /* ROBYearsRentingViewController.m in Sources */,
+				C05D97AF18CBAED700A1AD10 /* ROBCalculationSet.m in Sources */,
+				C05D97B818CBAEE200A1AD10 /* ROBGraphViewController.m in Sources */,
+				C05D97C418CBD01D00A1AD10 /* ROBDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01668541895AD9400D6370A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01668661895AD9400D6370A /* Rent_or_BuyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C016685E1895AD9400D6370A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C01668361895AD9400D6370A /* Rent or Buy */;
+			targetProxy = C016685D1895AD9400D6370A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C01668431895AD9400D6370A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C01668441895AD9400D6370A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C016684C1895AD9400D6370A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C016684D1895AD9400D6370A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C01668621895AD9400D6370A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C01668631895AD9400D6370A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01668671895AD9400D6370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01668681895AD9400D6370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C016686A1895AD9400D6370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rent or Buy/Rent or Buy-Prefix.pch";
+				INFOPLIST_FILE = "Rent or Buy/Rent or Buy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C016686B1895AD9400D6370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rent or Buy/Rent or Buy-Prefix.pch";
+				INFOPLIST_FILE = "Rent or Buy/Rent or Buy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C016686D1895AD9400D6370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rent or Buy.app/Rent or Buy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rent or Buy/Rent or Buy-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Rent or BuyTests/Rent or BuyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C016686E1895AD9400D6370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Rent or Buy.app/Rent or Buy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rent or Buy/Rent or Buy-Prefix.pch";
+				INFOPLIST_FILE = "Rent or BuyTests/Rent or BuyTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01668321895AD9400D6370A /* Build configuration list for PBXProject "Rent or Buy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01668671895AD9400D6370A /* Debug */,
+				C01668681895AD9400D6370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01668691895AD9400D6370A /* Build configuration list for PBXNativeTarget "Rent or Buy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C016686A1895AD9400D6370A /* Debug */,
+				C016686B1895AD9400D6370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C016686C1895AD9400D6370A /* Build configuration list for PBXNativeTarget "Rent or BuyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C016686D1895AD9400D6370A /* Debug */,
+				C016686E1895AD9400D6370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C016682F1895AD9400D6370A /* Project object */;
+}
