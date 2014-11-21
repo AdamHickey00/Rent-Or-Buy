@@ -9,7 +9,7 @@
 #import "ROBHomeViewController.h"
 #import "ROBFormatter.h"
 #import "ROBCalculationInput.h"
-#import "ROBGraphViewController.h"
+#import "ROBResultsViewController.h"
 
 @interface ROBHomeViewController ()
 
@@ -216,7 +216,7 @@ int const ADVANCED_ROW_INDEX = 10;
         
         // Create and pass through the input values to controller
         ROBCalculationInput *calculationInput = [self getCalculationInput];
-        ROBGraphViewController *controller = segue.destinationViewController;
+        ROBResultsViewController *controller = segue.destinationViewController;
         controller.calculationInput = calculationInput;
         
     }

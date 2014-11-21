@@ -48,4 +48,42 @@
     
 }
 
+- (int) HighestTotalAmountYear {
+    
+    // return rental year containing highest total amount
+    double highestAmount = [self HighestTotalAmount];
+    int rentalYear = 0;
+    
+    for (int i = 0; i < self.calculationInput.totalYearsRenting; i++) {
+        
+        ROBCalculation *calculation = [self GetCalculationForRentingYear:i];
+        if (floor(highestAmount) == floor(calculation.totalValue)) {
+            return rentalYear;
+        }
+        
+        rentalYear += 1;
+    }
+    
+    return rentalYear;
+    
+}
+
+- (double) HighestTotalAmount {
+    
+    double highestAmount = 0;
+    
+    for (id key in self.calculations) {
+        
+        // return highest total amount in calculation dictionary
+        ROBCalculation *input = [self.calculations objectForKey:key];
+        if (input.totalValue > highestAmount) {
+            highestAmount = input.totalValue;
+        }
+        
+    }
+
+    return floor(highestAmount);
+    
+}
+
 @end

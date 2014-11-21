@@ -57,10 +57,17 @@
     
     // Pass the current calculation to the table cell
     cell.yearsRentingLabel.text = calculation.yearsRentingText;
-
-    cell.amountLabel.text = [self.formatter formatCurrency:[NSString stringWithFormat:@"%f", calculation.totalAmount]];
-    
+    cell.amountLabel.text = [self.formatter formatCurrency:[NSString stringWithFormat:@"%f", calculation.totalValue]];
     cell.calculation = calculation;
+    
+    // bold the highest total amount
+    double highestAmount = self.calculationSet.HighestTotalAmount;
+    double currentTotalAmount = floor(calculation.totalValue);
+    
+    if (highestAmount == currentTotalAmount){
+        cell.amountLabel.font = [UIFont boldSystemFontOfSize:18];
+        cell.amountLabel.textColor = [UIColor blackColor];
+    }
     
     return cell;
     

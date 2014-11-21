@@ -19,6 +19,7 @@
     
     self.navigation.title = @"Detail";
     self.yearsRentingCell.textLabel.text = self.calculation.yearsRentingText;
+    self.totalValueText.text = self.calculation.totalValueText;
     
     // Fill in calculation details
     self.downPayment.text = [formatter formatCurrencyFromValue:self.calculation.downPayment];
@@ -34,11 +35,7 @@
     self.taxWriteoff.text = [formatter formatCurrencyFromValue:self.calculation.taxWriteoff];
     self.savingsDuringLoan.text = [formatter formatCurrencyFromValue:self.calculation.savingsDuringLoan];
     self.saivngsAfterLoan.text = [formatter formatCurrencyFromValue:self.calculation.savingsAfterLoan];
-    
-    /* todo
     self.totalValue.text = [formatter formatCurrencyFromValue:self.calculation.totalValue];
-
-    */
     
 }
 

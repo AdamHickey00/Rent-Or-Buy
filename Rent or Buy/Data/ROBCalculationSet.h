@@ -16,5 +16,7 @@
 @property (nonatomic, retain) NSMutableDictionary *calculations;
 
 - (ROBCalculation *) GetCalculationForRentingYear:(int) yearRenting;
+- (double) HighestTotalAmount;
+- (int) HighestTotalAmountYear;
 
 @end

@@ -15,9 +15,9 @@
 
 @property (nonatomic, assign) int yearsRenting;
 @property (nonatomic, assign) NSString *yearsRentingText;
+@property (nonatomic, assign) NSString *totalValueText;
 
 // Calculated outputs
-@property (nonatomic, assign, getter = getTotalAmount) double totalAmount;
 @property (nonatomic, assign, getter = getDownPayment) double downPayment;
 @property (nonatomic, assign, getter = getMortgage) double mortgage;
 @property (nonatomic, assign, getter = getYearsOwning) int yearsOwning;

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="yTB-b7-ULl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="yTB-b7-ULl">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Info-->
+        <!--Info-->
         <scene sceneID="T2G-Ci-MZI">
             <objects>
                 <viewController id="ySu-TW-rOe" sceneMemberID="viewController">
@@ -27,7 +28,7 @@
             </objects>
             <point key="canvasLocation" x="-201" y="-1842"/>
         </scene>
-        <!--Years Renting View Controller - Years Renting-->
+        <!--Years Renting-->
         <scene sceneID="F6l-1i-kPh">
             <objects>
                 <tableViewController id="6hy-r6-vjh" customClass="ROBYearsRentingViewController" sceneMemberID="viewController">
@@ -111,9 +112,61 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="61c-uf-Kdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="-1061"/>
+            <point key="canvasLocation" x="278" y="-1067"/>
         </scene>
-        <!--Detail View Controller - Detail-->
+        <!--Results View Controller-->
+        <scene sceneID="1om-kJ-uNX">
+            <objects>
+                <viewController id="FBU-AF-1Co" customClass="ROBResultsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dlY-HZ-bFo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lzH-5f-LBY">
+                                <rect key="frame" x="83" y="337" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Detailed Results">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6hy-r6-vjh" kind="push" identifier="YearsRenting" id="KzS-Me-vhx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rent.png" id="GT2-sB-Ghm">
+                                <rect key="frame" x="16" y="142" width="288" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rent or Buy?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tPL-ag-Pwq">
+                                <rect key="frame" x="100" y="88" width="120" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Buy.png" id="gLu-33-bSV">
+                                <rect key="frame" x="16" y="142" width="288" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Neutral.png" id="bLb-wT-fXP">
+                                <rect key="frame" x="16" y="142" width="288" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="g8l-0X-hle"/>
+                    <connections>
+                        <outlet property="buyImage" destination="gLu-33-bSV" id="z9z-JY-POD"/>
+                        <outlet property="neutralImage" destination="bLb-wT-fXP" id="Bh7-Dq-NDS"/>
+                        <outlet property="rentImage" destination="GT2-sB-Ghm" id="EAu-7k-3S9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="geE-ME-oal" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="-598"/>
+        </scene>
+        <!--Detail-->
         <scene sceneID="fJg-vK-CVr">
             <objects>
                 <tableViewController id="lkJ-ZS-9Di" customClass="ROBDetailViewController" sceneMemberID="viewController">
@@ -235,31 +288,8 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="tqP-RG-WjS" detailTextLabel="bkC-xk-Ybj" style="IBUITableViewCellStyleValue1" id="pU5-uh-cqT">
-                                        <rect key="frame" x="0.0" y="284" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pU5-uh-cqT" id="HDt-Wp-bQx">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Loan Payment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tqP-RG-WjS">
-                                                    <rect key="frame" x="15" y="11" width="111" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="$1450" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bkC-xk-Ybj">
-                                                    <rect key="frame" x="257" y="11" width="48" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="ze2-B2-Sv5" detailTextLabel="cKW-ay-MAk" style="IBUITableViewCellStyleValue1" id="mJg-3P-q7W">
-                                        <rect key="frame" x="0.0" y="328" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="284" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mJg-3P-q7W" id="kXw-Rz-u3r">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -283,7 +313,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="7lh-fO-kbZ" detailTextLabel="hrN-pk-ddz" style="IBUITableViewCellStyleValue1" id="IR5-n2-5hI">
-                                        <rect key="frame" x="0.0" y="372" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="328" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IR5-n2-5hI" id="dZ0-tQ-1to">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -307,7 +337,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="fIy-KV-TOb" detailTextLabel="hmr-CL-LfK" style="IBUITableViewCellStyleValue1" id="IWT-LR-nVf">
-                                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="372" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IWT-LR-nVf" id="x2X-Z7-yOH">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -325,6 +355,30 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="tqP-RG-WjS" detailTextLabel="bkC-xk-Ybj" style="IBUITableViewCellStyleValue1" id="pU5-uh-cqT">
+                                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pU5-uh-cqT" id="HDt-Wp-bQx">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Loan Payment" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tqP-RG-WjS">
+                                                    <rect key="frame" x="15" y="11" width="111" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.99215692280000001" green="0.058823533359999999" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="$1450" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bkC-xk-Ybj">
+                                                    <rect key="frame" x="257" y="11" width="48" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.99215692280000001" green="0.058823533359999999" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -498,6 +552,7 @@
                         <outlet property="totalMaintenancePaid" destination="PxZ-1f-OOl" id="Efw-vN-mdu"/>
                         <outlet property="totalPropertyTaxPaid" destination="4Y4-PX-cJD" id="Yvo-aH-dHD"/>
                         <outlet property="totalValue" destination="8If-Rs-4zA" id="Wd2-Hw-u9a"/>
+                        <outlet property="totalValueText" destination="Qdh-UJ-Zkt" id="Ey8-pC-SdN"/>
                         <outlet property="totalYearsOwning" destination="BQa-Ca-D61" id="VwM-P8-8Ei"/>
                         <outlet property="yearsRentingCell" destination="vSL-cU-mfG" id="7Em-BE-521"/>
                     </connections>
@@ -506,7 +561,7 @@
             </objects>
             <point key="canvasLocation" x="698" y="-1072"/>
         </scene>
-        <!--Home View Controller - Should I Rent or Buy?-->
+        <!--Should I Rent or Buy?-->
         <scene sceneID="bB4-FU-6fv">
             <objects>
                 <tableViewController id="tpg-0R-JLn" customClass="ROBHomeViewController" sceneMemberID="viewController">
@@ -856,7 +911,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="6hy-r6-vjh" kind="push" identifier="YearsRenting" id="tf7-c1-rfV"/>
+                                            <segue destination="FBU-AF-1Co" kind="push" identifier="YearsRenting" id="OKJ-mf-o8T"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -907,7 +962,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YjV-l9-5LQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-420" y="-1038"/>
+            <point key="canvasLocation" x="-438" y="-1072"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C1N-tu-DzW">
@@ -928,6 +983,11 @@
             <point key="canvasLocation" x="-872" y="-1028"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Buy.png" width="380" height="159"/>
+        <image name="Neutral.png" width="380" height="159"/>
+        <image name="Rent.png" width="380" height="159"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

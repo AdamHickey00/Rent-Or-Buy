@@ -32,16 +32,6 @@
     
 }
 
-- (double) getTotalAmount {
-    
-    double value;
-    
-    value = self.calculationInput.homePrice;
-    
-    return value;
-    
-}
-
 // Down payment: Inital amount + Amount saved while renting
 - (double) getDownPayment {
     
@@ -102,6 +92,21 @@
     double value = loan * temp4;
     
     return value;
+    
+}
+
+// like "Total value (25 yrs)"
+- (NSString *) totalValueText {
+    
+    NSString *prefix = @"Total value (";
+    NSString *suffix = @" yrs)";
+    int totalTime = self.yearsOwning + self.yearsRenting;
+    NSString *totalTimeText = [NSString stringWithFormat:@"%i", totalTime];
+    NSString *text = [NSString stringWithFormat:@"%@%@", prefix, totalTimeText];
+    
+    text = [NSString stringWithFormat:@"%@%@", text, suffix];
+    
+    return text;
     
 }
 
@@ -340,12 +345,25 @@
     
 }
 
-// todo
 - (double) getTotalValue {
     
-    double value;
+    double value = 0;
     
-    value = 0;
+    // positive
+    value = value + self.calculationInput.homePrice;
+    value = value + [self getDownPayment];
+    value = value + [self getMortgage];
+    value = value + [self getTaxWriteoff];
+    value = value + [self getSavingsDuringLoan];
+    value = value + [self getSavingsAfterLoan];
+    
+    // negative
+    value = value - [self getRentPaid]; 
+    value = value - [self getInterestPaid];
+    value = value - [self getPmiPaid];
+    value = value - [self getTotalInsurancePaid];
+    value = value - [self getTotalMaintenancePaid];
+    value = value - [self getTotalPropertyTaxPaid];
     
     return value;
     
