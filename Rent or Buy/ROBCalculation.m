@@ -321,8 +321,6 @@
     
     return value;
     
-    return value;
-    
 }
 
 // P(1 + i * n)
