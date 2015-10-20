@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3A855D5B7FF55593B6C11360E4A1A6626CC8673F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3A855D5B7FF55593B6C11360E4A1A6626CC8673F" : 0,
+    "C0F610B6-111A-4D54-839B-72A4DAFCACA6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3C39D5DC-6B75-4E0F-AD77-141C81D17755",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3A855D5B7FF55593B6C11360E4A1A6626CC8673F" : "Rent%20or%20Buy",
+    "C0F610B6-111A-4D54-839B-72A4DAFCACA6" : "Rent or Buy"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Rent or Buy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Rent or Buy.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AdamHickey00\/Rent-Or-Buy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3A855D5B7FF55593B6C11360E4A1A6626CC8673F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/AdamHickey00\/Rent-Or-Buy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C0F610B6-111A-4D54-839B-72A4DAFCACA6"
+    }
+  ]
+}
